@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de desenvolvedor de software focado em aplicações web modernas, código limpo e arquitetura eficiente.">
+  <title>Desenvolvedor de Software | Portfólio</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Folhas de Estilos CSS Modulares -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER FIXO E NAVEGAÇÃO
+       ========================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#inicio" class="nav-logo" aria-label="Página inicial">
+        <span class="nav-logo-symbol">&lt;</span>dev<span class="text-purple">.portfolio</span><span class="nav-logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Menu de Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Navegação principal">
+        <a href="#inicio" class="nav-link active">Início</a>
+        <a href="#sobre" class="nav-link">Sobre mim</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+
+      <!-- Ações do Header: Alternador de Tema e Menu Mobile -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+          <!-- Ícone Sol (Modo Claro) -->
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Ícone Lua (Modo Escuro) -->
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu">
+          <!-- Ícone Hambúrguer (Quando Fechado) -->
+          <svg class="icon-hamburger" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <!-- Ícone Fechar / X (Quando Aberto) -->
+          <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       CONTEÚDO PRINCIPAL
+       ========================================================================== -->
+  <main id="main-content">
+
+    <!-- 1. SEÇÃO INÍCIO (HERO) -->
+    <section id="inicio" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="badge-status">
+            <span class="status-dot"></span>
+            Disponível para novos projetos & parcerias
+          </div>
+
+          <h1 class="hero-headline">
+            Desenvolvendo soluções digitais com <span class="text-gradient">código limpo</span> e propósito.
+          </h1>
+
+          <p class="hero-description">
+            Desenvolvedor focado na criação de aplicações web modernas, de alta performance e visual refinado. Transformando requisitos complexos em interfaces fluidas e intuitivas.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">
+              Ver Projetos
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contato" class="btn btn-secondary">
+              Entrar em Contato
+            </a>
+          </div>
+        </div>
+
+        <!-- Terminal Interativo (Substituto Criativo de Foto) -->
+        <div class="hero-visual reveal reveal-delay-2">
+          <div class="terminal-window animate-float">
+            <div class="terminal-header">
+              <div class="terminal-controls">
+                <span class="terminal-control-dot close"></span>
+                <span class="terminal-control-dot minimize"></span>
+                <span class="terminal-control-dot maximize"></span>
+              </div>
+              <div class="terminal-tabs">
+                <span class="terminal-tab active">profile.ts</span>
+                <span class="terminal-tab">stack.json</span>
+              </div>
+            </div>
+
+            <div class="terminal-body">
+              <div class="terminal-line"><span class="terminal-line-num">1</span><span><span class="syn-comment">// Perfil profissional do desenvolvedor</span></span></div>
+              <div class="terminal-line"><span class="terminal-line-num">2</span><span><span class="syn-kw">const</span> <span class="syn-fn">developer</span> = {</span></div>
+              <div class="terminal-line"><span class="terminal-line-num">3</span><span>  <span class="syn-prop">role</span>: <span class="syn-str">"Software Developer"</span>,</span></div>
+              <div class="terminal-line"><span class="terminal-line-num">4</span><span>  <span class="syn-prop">status</span>: <span class="syn-str">"🟢 Open to Opportunities"</span>,</span></div>
+              <div class="terminal-line"><span class="terminal-line-num">5</span><span>  <span class="syn-prop">coreStack</span>: [</span></div>
+              <div class="terminal-line"><span class="terminal-line-num">6</span><span>    <span class="syn-str">"HTML5 Semântico"</span>,</span></div>
+              <div class="terminal-line"><span class="terminal-line-num">7</span><span>    <span class="syn-str">"CSS3 Modular"</span>,</span></div>
+              <div class="terminal-line"><span class="terminal-line-num">8</span><span>    <span class="syn-str">"JavaScript ES6+"</span>,</span></div>
+              <div class="terminal-line"><span class="terminal-line-num">9</span><span>    <span class="syn-str">"REST APIs"</span></span></div>
+              <div class="terminal-line"><span class="terminal-line-num">10</span><span>  ],</span></div>
+              <div class="terminal-line"><span class="terminal-line-num">11</span><span>  <span class="syn-prop">focus</span>: <span class="syn-str">"Performance, A11y & Clean Architecture"</span>,</span></div>
+              <div class="terminal-line"><span class="terminal-line-num">12</span><span>  <span class="syn-prop">location</span>: <span class="syn-str">"Remoto / Brasil"</span></span></div>
+              <div class="terminal-line"><span class="terminal-line-num">13</span><span>};<span class="cursor-blink"></span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SEÇÃO SOBRE MIM -->
+    <section id="sobre" class="about-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">// SOBRE MIM</span>
+          <h2 class="section-title">Dedicação a código limpo e soluções inteligentes</h2>
+          <p class="section-description">
+            Conectando engenharia de software com design funcional para criar produtos que geram impacto real.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio reveal reveal-delay-1">
+            <p>
+              Sou um desenvolvedor apaixonado por construir aplicações modernas e performáticas na web. Meu foco está em aliar boas práticas de arquitetura a interfaces elegantes e intuitivas.
+            </p>
+            <p>
+              Acredito que um bom software vai além de escrever código que funciona: trata-se de criar sistemas sustentáveis, acessíveis a todos os usuários e com manutenção simplificada a longo prazo.
+            </p>
+            <div style="margin-top: var(--space-xs);">
+              <a href="#habilidades" class="btn btn-outline">Explorar minhas competências</a>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card reveal reveal-delay-1">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Comprometimento com Qualidade e Prazos</div>
+            </div>
+            <div class="stat-card reveal reveal-delay-2">
+              <div class="stat-number">+10</div>
+              <div class="stat-label">Tecnologias e Ferramentas Dominadas</div>
+            </div>
+            <div class="stat-card reveal reveal-delay-3">
+              <div class="stat-number">&lt; 1s</div>
+              <div class="stat-label">Foco em Carregamento e Performance Web</div>
+            </div>
+            <div class="stat-card reveal reveal-delay-4">
+              <div class="stat-number">Clean</div>
+              <div class="stat-label">Arquitetura Estruturada & Modular</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SEÇÃO HABILIDADES -->
+    <section id="habilidades" class="skills-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">// HABILIDADES TÉCNICAS</span>
+          <h2 class="section-title">Stack e ferramentas em constante evolução</h2>
+          <p class="section-description">
+            Conjunto de tecnologias utilizadas no dia a dia para desenvolver sistemas robustos e acessíveis.
+          </p>
+        </div>
+
+        <div class="skills-container" id="skills-container">
+          <!-- Habilidades e categorias renderizadas dinamicamente via render-skills.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SEÇÃO PROJETOS -->
+    <section id="projetos" class="projects-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">// PORTFÓLIO DE PROJETOS</span>
+          <h2 class="section-title">Trabalhos em destaque</h2>
+          <p class="section-description">
+            Uma seleção de aplicações construídas com foco em resolução de problemas, usabilidade e código bem estruturado.
+          </p>
+        </div>
+
+        <!-- Barra de Filtros por Categoria -->
+        <div class="projects-filter-bar reveal reveal-delay-1" id="projects-filter" role="tablist" aria-label="Filtrar projetos por categoria">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Backend</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack</button>
+        </div>
+
+        <!-- Grid de Cards de Projetos -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Os projetos serão renderizados dinamicamente a partir de projects-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SEÇÃO CONTATO -->
+    <section id="contato" class="contact-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">// VAMOS CONVERSAR</span>
+          <h2 class="section-title">Vamos conversar?</h2>
+          <p class="section-description">
+            Estou disponível para novas oportunidades, projetos desafiadores e conexões na área de tecnologia. Entre em contato através dos canais abaixo:
+          </p>
+        </div>
+
+        <div class="contact-hub-wrapper">
+          <!-- Card de Destaque: Cópia Rápida de E-mail -->
+          <div class="contact-email-card card reveal reveal-scale">
+            <div class="email-card-glow" aria-hidden="true"></div>
+            <div class="email-card-content">
+              <div class="email-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+
+              <div class="email-text-box">
+                <span class="email-label">E-mail para Contato Direto</span>
+                <!-- Campo preparado para preenchimento posterior com o e-mail real -->
+                <span class="email-address text-mono" id="contact-email-val">seu-email@exemplo.com</span>
+              </div>
+
+              <div class="email-action-box">
+                <button type="button" class="btn btn-primary" id="btn-copy-email" aria-label="Copiar endereço de e-mail para a área de transferência">
+                  <svg class="copy-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="btn-text">Copiar E-mail</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Notificação Visual de Confirmação -->
+            <div id="copy-toast" class="copy-toast" role="status" aria-live="polite">
+              ✓ E-mail copiado para a área de transferência!
+            </div>
+          </div>
+
+          <!-- Grid de Conexões: GitHub e LinkedIn -->
+          <div class="contact-social-grid">
+            <!-- Card GitHub -->
+            <a href="https://github.com/seu-usuario" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="contact-social-card card reveal reveal-delay-1"
+               aria-label="Abrir perfil no GitHub em nova aba">
+              <div class="social-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div class="social-text-box">
+                <span class="social-title">GitHub</span>
+                <span class="social-subtitle text-mono">github.com/seu-usuario</span>
+              </div>
+              <div class="social-action-arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <!-- Card LinkedIn -->
+            <a href="https://linkedin.com/in/seu-usuario" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="contact-social-card card reveal reveal-delay-2"
+               aria-label="Abrir perfil no LinkedIn em nova aba">
+              <div class="social-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="social-text-box">
+                <span class="social-title">LinkedIn</span>
+                <span class="social-subtitle text-mono">linkedin.com/in/seu-usuario</span>
+              </div>
+              <div class="social-action-arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       RODAPÉ (FOOTER)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content reveal">
+      <a href="#inicio" class="nav-logo" aria-label="Voltar ao início">
+        <span class="nav-logo-symbol">&lt;</span>dev<span class="text-purple">.portfolio</span><span class="nav-logo-symbol">/&gt;</span>
+      </a>
+
+      <div class="footer-nav">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2026 <strong>[Seu Nome]</strong> • Desenvolvedor de Software. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts: Dados e Módulos -->
+  <script src="assets/js/data/projects-data.js"></script>
+  <script src="assets/js/data/skills-data.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

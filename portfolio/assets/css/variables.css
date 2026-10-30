@@ -1,0 +1,124 @@
+:root,
+[data-theme="dark"] {
+  /* ==========================================================================
+     PALETA DE CORES PRINCIPAL (TEMA ESCURO - PADRÃO)
+     ========================================================================== */
+  --primary: #8B5CF6;              /* Roxo principal */
+  --primary-hover: #7C3AED;        /* Roxo mais intenso para estados de foco/hover */
+  --primary-light: #A78BFA;        /* Variação mais clara para realces */
+  --secondary: #C4B5FD;            /* Lilás suave para detalhes e subtítulos */
+  --secondary-glow: rgba(196, 181, 253, 0.15);
+
+  /* Fundos e Superfícies */
+  --bg-primary: #101014;          /* Preto profundo para o canvas principal */
+  --bg-surface: #1C1825;          /* Grafite arroxeado para cards e superfícies */
+  --bg-surface-elevated: #241F32; /* Superfície de elementos sobrepostos / modais */
+  --bg-surface-hover: #292339;    /* Hover sobre cards e linhas interativas */
+  
+  /* Bordas e Divisores */
+  --border-color: #2E2840;        /* Borda sutil de contraste estrutural */
+  --border-subtle: rgba(139, 92, 246, 0.18); /* Borda com leve brilho roxo */
+  --border-focus: #8B5CF6;
+
+  /* Tipografia */
+  --text-primary: #F9FAFB;        /* Branco off-white de máxima legibilidade */
+  --text-secondary: #9CA3AF;      /* Cinza intermediário para textos descritivos */
+  --text-muted: #6B7280;          /* Cinza sutil para metadados e legendas */
+  --text-accent: #C4B5FD;         /* Lilás para destaque em texto */
+
+  /* Terminal e Elementos Técnicos */
+  --terminal-bg: #13101C;
+  --terminal-header: #191426;
+  --terminal-border: #2B233D;
+  --syntax-keyword: #F472B6;      /* Rosa neon */
+  --syntax-string: #A7F3D0;       /* Menta suave */
+  --syntax-function: #93C5FD;     /* Azul claro */
+  --syntax-property: #C4B5FD;     /* Lilás */
+  --syntax-comment: #6B7280;
+
+  /* Sombras e Efeitos Especiais */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 0 35px -5px rgba(139, 92, 246, 0.28);
+  --aurora-gradient: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.18), transparent 70%);
+}
+
+[data-theme="light"] {
+  /* ==========================================================================
+     PALETA DE CORES (TEMA CLARO - ALTERNATIVO)
+     ========================================================================== */
+  --primary: #7C3AED;              /* Roxo com contraste ideal em fundos claros */
+  --primary-hover: #6D28D9;
+  --primary-light: #8B5CF6;
+  --secondary: #6B21A8;            /* Roxo mais escuro para garantir contraste WCAG */
+  --secondary-glow: rgba(124, 58, 237, 0.1);
+
+  /* Fundos e Superfícies */
+  --bg-primary: #F8FAFC;          /* Branco gelo suave */
+  --bg-surface: #FFFFFF;          /* Branco puro para cards */
+  --bg-surface-elevated: #F1F5F9;
+  --bg-surface-hover: #F8FAFC;
+
+  /* Bordas e Divisores */
+  --border-color: #E2E8F0;
+  --border-subtle: rgba(124, 58, 237, 0.12);
+  --border-focus: #7C3AED;
+
+  /* Tipografia */
+  --text-primary: #0F172A;        /* Slate profundo de alta legibilidade */
+  --text-secondary: #475569;      /* Cinza ardósia para textos */
+  --text-muted: #94A3B8;
+  --text-accent: #6D28D9;
+
+  /* Terminal e Elementos Técnicos */
+  --terminal-bg: #1E1B2E;         /* Mantém estética escura elegante no widget */
+  --terminal-header: #26223B;
+  --terminal-border: #383152;
+  --syntax-keyword: #F472B6;
+  --syntax-string: #A7F3D0;
+  --syntax-function: #93C5FD;
+  --syntax-property: #C4B5FD;
+  --syntax-comment: #94A3B8;
+
+  /* Sombras e Efeitos Especiais */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 35px -5px rgba(124, 58, 237, 0.15);
+  --aurora-gradient: radial-gradient(circle at 50% 0%, rgba(124, 58, 237, 0.1), transparent 70%);
+}
+
+:root {
+  /* ==========================================================================
+     TIPOGRAFIA, ESPAÇAMENTOS E TRANSIÇÕES GLOBAIS
+     ========================================================================== */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, monospace;
+
+  /* Escala de Espaçamento Modular */
+  --space-2xs: 0.25rem; /* 4px */
+  --space-xs:  0.5rem;  /* 8px */
+  --space-sm:  0.75rem; /* 12px */
+  --space-md:  1rem;    /* 16px */
+  --space-lg:  1.5rem;  /* 24px */
+  --space-xl:  2rem;    /* 32px */
+  --space-2xl: 3rem;    /* 48px */
+  --space-3xl: 4.5rem;  /* 72px */
+
+  /* Arredondamento (Border Radius) */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transições Suaves */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Dimensões de Layout */
+  --max-width: 1200px;
+  --header-height: 4.5rem; /* 72px */
+}
